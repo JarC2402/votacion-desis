@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+<body>    
+    <h2>Formulario de votacion</h2>
+    <form class="Form_content">
+        
+        <div><label for="name">Nombre y apellido:</label>
+        <input type="text" id="name" name="name"placeholder="Nombre completo"></div>
+        <div><label for="Alias">Alias:</label>
+        <input type="text" id="Alias" name="Alias"></div>
+        <div><label for="RUT">RUT:</label>
+        <input type="text" id="RUT" name="RUT" placeholder="Ejemplo: 02482587-3"></div>
+        <div><label for="Email">Email:</label>
+        <input type="text" id="Email" name="Email"  placeholder="ejemplo@gmail.com"></div>
+        
+        <div><label for="Region">Region:</label>
+                <select>
+                    <option value="option1">Seleccionar</option>
+                    <option value="option1">Metropolitana</option>
+                    <option value="option2">O'higgins</option>
+                    <option value="option3">Los Lagos</option>
+                  </select>
+        </div>
+        <div><label for="Comuna">Comuna:</label>
+            <select>
+                <option value="option1">Seleccionar</option>
+                <option value="option1">San Fernando</option>
+                <option value="option2">Santa Cruz</option>
+                <option value="option3">Rancagua</option>
+              </select>
+    </div>
+    <div><label for="Candidato">Candidato:</label>
+        <select>
+            <option value="option1">Seleccionar</option>
+            <option value="option1">Ocarina of time</option>
+            <option value="option2">Majoras Mask</option>
+            <option value="option3">the leyend of link</option>
+          </select>
+    </div>
+    <label for="survey">Como se entero de nosotros: </label>
+    <span>Web</span><input type="checkbox" id="Web" name="Web">
+    <span>tv</span><input type="checkbox" id="tv" name="tv">
+    <span>Red social</span><input type="checkbox" id="Red social" name="Red social">
+    <span>Amigos</span><input type="checkbox" id="Friends" name="Friends">
+    <hr> <div><input type="submit" value="Send" onclick="dataCheck()"></div>
+    </form>
+    <script src="/main.js"></script>
+
+</body>
+</html>
+
+<!-- tareas
+- los campos debes verificar que sea caracteres validos. ejemplo que el email contenga @. el rut debe tener tantos digitos y el ultimo debe estar searado por un -
+- las casillas de seleccion deben cambiar segun la seleccion anterior. ejemplo: la region Metropolitina tiene diferentes comunas que la region ogi
+-->
